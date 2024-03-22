@@ -91,6 +91,30 @@ h1{
     color: brown;
 }
 
+#done{
+    visibility: hidden;
+    margin-right: 9px;
+}
+
+#done::before{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: #d4844c;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+#done:checked:before{
+    content: "\00d7";
+    color: brown;
+    font-size: 24px;
+}
+
 .del{
     height: 2.5em;
     width: 2.5em;
